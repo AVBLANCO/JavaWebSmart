@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Era más fácil crear un framework que aprender a usar uno existente  \\
-package back.controller.manejointegradoplagas;
+package controller.manejointegradoplagas;
 
 import java.io.IOException;
 import java.io.PrintWriter;

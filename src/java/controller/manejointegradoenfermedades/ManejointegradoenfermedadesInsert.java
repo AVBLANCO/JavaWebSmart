@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Tenemos trabajos que odiamos para comprar cosas que no necesitamos.  \\
-package back.controller.manejointegradoenfermedades;
+package controller.manejointegradoenfermedades;
 
 import java.io.IOException;
 import java.io.PrintWriter;

@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Cuando eres Ingeniero en sistemas, pero tu vocación siempre fueron los memes  \\
-package back.controller.manejointegradoplagas;
+package controller.manejointegradoplagas;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;

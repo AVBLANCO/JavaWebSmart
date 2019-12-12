@@ -1,13 +1,6 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
+package controller.lote;
 
-//    El coronel necesitó setenta y cinco años -los setenta y cinco años de su vida, minuto a minuto- para llegar a ese instante. Se sintió puro, explícito, invencible, en el momento de responder:  \\
-package back.controller.lote;
-
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,13 +27,14 @@ public class LoteList extends HttpServlet {
                 
          String rta="";
          for (Lote lote: LoteFacade.listAll()) {
-             rta+="{
-         	    \"idlote\":\"+lote.getIdlote()+\",
-	    \"descripcionLote\":\"+lote.getDescripcionLote()+\",
-	    \"longitud\":\"+lote.getLongitud()+\",
-	    \"latitud\":\"+lote.getLatitud()+\",
-	    \"Finca_idfinca\":\"+lote.getFinca().getIdfinca()+\"
-             },";
+              rta="";
+//             rta+="{
+//         	    \"idlote\":\"+lote.getIdlote()+\",
+//	    \"descripcionLote\":\"+lote.getDescripcionLote()+\",
+//	    \"longitud\":\"+lote.getLongitud()+\",
+//	    \"latitud\":\"+lote.getLatitud()+\",
+//	    \"Finca_idfinca\":\"+lote.getFinca().getIdfinca()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

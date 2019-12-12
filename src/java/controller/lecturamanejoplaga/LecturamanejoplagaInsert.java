@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    NEVERMORE  \\
-package back.controller.lecturamanejoplaga;
+package controller.lecturamanejoplaga;
 
 import java.io.IOException;
 import java.io.PrintWriter;

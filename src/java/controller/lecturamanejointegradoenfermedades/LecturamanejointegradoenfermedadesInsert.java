@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    In Anarchy we trust  \\
-package back.controller.lecturamanejointegradoenfermedades;
+package controller.lecturamanejointegradoenfermedades;
 
 import java.io.IOException;
 import java.io.PrintWriter;

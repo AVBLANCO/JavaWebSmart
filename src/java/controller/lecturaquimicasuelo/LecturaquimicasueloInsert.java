@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Te veeeeeooooo  \\
-package back.controller.lecturaquimicasuelo;
+package controller.lecturaquimicasuelo;
 
 import java.io.IOException;
 import java.io.PrintWriter;

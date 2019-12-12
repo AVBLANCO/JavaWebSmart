@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    La vie est composé de combien de fois nous rions avant de mourir  \\
-package back.controller.lote;
+package controller.lote;
 
 import java.io.IOException;
 import java.io.PrintWriter;

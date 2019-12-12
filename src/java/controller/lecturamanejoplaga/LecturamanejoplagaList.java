@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Quédate con quien te quiera por tu back-end, no por tu front-end  \\
-package back.controller.lecturamanejoplaga;
+package controller.lecturamanejoplaga;
 
 import back.dto.*;
 import java.io.IOException;
@@ -34,12 +28,12 @@ public class LecturamanejoplagaList extends HttpServlet {
                 
          String rta="";
          for (Lecturamanejoplaga lecturamanejoplaga: LecturamanejoplagaFacade.listAll()) {
-             rta+="{
-         	    \"idlecturaManejoPlaga\":\"+lecturamanejoplaga.getIdlecturaManejoPlaga()+\",
-	    \"valorLecturaManejoPlagacol\":\"+lecturamanejoplaga.getValorLecturaManejoPlagacol()+\",
-	    \"fechaLecturaManejoPlaga\":\"+lecturamanejoplaga.getFechaLecturaManejoPlaga()+\",
-	    \"Metricamanejoplagas_idmetricaManejoPlagas\":\"+lecturamanejoplaga.getMetricamanejoplagas().getIdmetricaManejoPlagas()+\"
-             },";
+//             rta+="{
+//         	    \"idlecturaManejoPlaga\":\"+lecturamanejoplaga.getIdlecturaManejoPlaga()+\",
+//	    \"valorLecturaManejoPlagacol\":\"+lecturamanejoplaga.getValorLecturaManejoPlagacol()+\",
+//	    \"fechaLecturaManejoPlaga\":\"+lecturamanejoplaga.getFechaLecturaManejoPlaga()+\",
+//	    \"Metricamanejoplagas_idmetricaManejoPlagas\":\"+lecturamanejoplaga.getMetricamanejoplagas().getIdmetricaManejoPlagas()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

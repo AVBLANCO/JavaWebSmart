@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    No se fije en el corte de cabello, soy mucho muy rico  \\
-package back.controller.lecturafisicasuelo;
+package controller.lecturafisicasuelo;
 
 import java.io.IOException;
 import java.io.PrintWriter;

@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    gravitaban alrededor del astro de la noche, y por primera vez podía la vista penetrar todos sus misterios.  \\
-package back.controller.lecturamanejointegradoenfermedades;
+package controller.lecturamanejointegradoenfermedades;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,12 +28,12 @@ public class LecturamanejointegradoenfermedadesList extends HttpServlet {
                 
          String rta="";
          for (Lecturamanejointegradoenfermedades lecturamanejointegradoenfermedades: LecturamanejointegradoenfermedadesFacade.listAll()) {
-             rta+="{
-         	    \"idlecturaManejoIntegradoEnfermedades\":\"+lecturamanejointegradoenfermedades.getIdlecturaManejoIntegradoEnfermedades()+\",
-	    \"fechaLecturaManejoIntegradoEnfermedadescol\":\"+lecturamanejointegradoenfermedades.getFechaLecturaManejoIntegradoEnfermedadescol()+\",
-	    \"valorLecturaManejoIntegradoEnfermedades\":\"+lecturamanejointegradoenfermedades.getValorLecturaManejoIntegradoEnfermedades()+\",
-	    \"Metricamanejointegradoenfermedades_idmetricaManejoIntegradoEnfermedades\":\"+lecturamanejointegradoenfermedades.getMetricamanejointegradoenfermedades().getIdmetricaManejoIntegradoEnfermedades()+\"
-             },";
+//             rta+="{
+//         	    \"idlecturaManejoIntegradoEnfermedades\":\"+lecturamanejointegradoenfermedades.getIdlecturaManejoIntegradoEnfermedades()+\",
+//	    \"fechaLecturaManejoIntegradoEnfermedadescol\":\"+lecturamanejointegradoenfermedades.getFechaLecturaManejoIntegradoEnfermedadescol()+\",
+//	    \"valorLecturaManejoIntegradoEnfermedades\":\"+lecturamanejointegradoenfermedades.getValorLecturaManejoIntegradoEnfermedades()+\",
+//	    \"Metricamanejointegradoenfermedades_idmetricaManejoIntegradoEnfermedades\":\"+lecturamanejointegradoenfermedades.getMetricamanejointegradoenfermedades().getIdmetricaManejoIntegradoEnfermedades()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

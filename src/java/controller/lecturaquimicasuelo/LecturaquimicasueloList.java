@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Te veeeeeooooo  \\
-package back.controller.lecturaquimicasuelo;
+package controller.lecturaquimicasuelo;
 
 import back.dto.*;
 import java.io.IOException;
@@ -34,12 +28,13 @@ public class LecturaquimicasueloList extends HttpServlet {
                 
          String rta="";
          for (Lecturaquimicasuelo lecturaquimicasuelo: LecturaquimicasueloFacade.listAll()) {
-             rta+="{
-         	    \"idlecturaQuimicaSuelo\":\"+lecturaquimicasuelo.getIdlecturaQuimicaSuelo()+\",
-	    \"fechaLecturaQuimicaSuelo\":\"+lecturaquimicasuelo.getFechaLecturaQuimicaSuelo()+\",
-	    \"valorLecturaQuimicaSuelo\":\"+lecturaquimicasuelo.getValorLecturaQuimicaSuelo()+\",
-	    \"Metricaquimicasuelo_idmetricaQuimicaSuelo\":\"+lecturaquimicasuelo.getMetricaquimicasuelo().getIdmetricaQuimicaSuelo()+\"
-             },";
+              rta="";
+//             rta+="{
+//         	    \"idlecturaQuimicaSuelo\":\"+lecturaquimicasuelo.getIdlecturaQuimicaSuelo()+\",
+//	    \"fechaLecturaQuimicaSuelo\":\"+lecturaquimicasuelo.getFechaLecturaQuimicaSuelo()+\",
+//	    \"valorLecturaQuimicaSuelo\":\"+lecturaquimicasuelo.getValorLecturaQuimicaSuelo()+\",
+//	    \"Metricaquimicasuelo_idmetricaQuimicaSuelo\":\"+lecturaquimicasuelo.getMetricaquimicasuelo().getIdmetricaQuimicaSuelo()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

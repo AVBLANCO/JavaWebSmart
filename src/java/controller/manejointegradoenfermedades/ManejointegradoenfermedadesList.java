@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Ahora tú puedes ser el tipo con el látigo  \\
-package back.controller.manejointegradoenfermedades;
+package controller.manejointegradoenfermedades;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,11 +28,11 @@ public class ManejointegradoenfermedadesList extends HttpServlet {
                 
          String rta="";
          for (Manejointegradoenfermedades manejointegradoenfermedades: ManejointegradoenfermedadesFacade.listAll()) {
-             rta+="{
-         	    \"idmanejoIntegradoEnfermedades\":\"+manejointegradoenfermedades.getIdmanejoIntegradoEnfermedades()+\",
-	    \"descripcioManejoIntegradoEnfermedades\":\"+manejointegradoenfermedades.getDescripcioManejoIntegradoEnfermedades()+\",
-	    \"Mipe_idmipe\":\"+manejointegradoenfermedades.getMipe().getIdmipe()+\"
-             },";
+//             rta+="{
+//         	    \"idmanejoIntegradoEnfermedades\":\"+manejointegradoenfermedades.getIdmanejoIntegradoEnfermedades()+\",
+//	    \"descripcioManejoIntegradoEnfermedades\":\"+manejointegradoenfermedades.getDescripcioManejoIntegradoEnfermedades()+\",
+//	    \"Mipe_idmipe\":\"+manejointegradoenfermedades.getMipe().getIdmipe()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

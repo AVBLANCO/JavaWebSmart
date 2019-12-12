@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Hecho en sólo 6 días  \\
-package back.controller.lecturafisicasuelo;
+package controller.lecturafisicasuelo;
 
 import back.dto.*;
 import java.io.IOException;
@@ -34,12 +28,13 @@ public class LecturafisicasueloList extends HttpServlet {
                 
          String rta="";
          for (Lecturafisicasuelo lecturafisicasuelo: LecturafisicasueloFacade.listAll()) {
-             rta+="{
-         	    \"idlecturaFisicaSuelo\":\"+lecturafisicasuelo.getIdlecturaFisicaSuelo()+\",
-	    \"fechaLecturaFisicaSuelo\":\"+lecturafisicasuelo.getFechaLecturaFisicaSuelo()+\",
-	    \"valorLecturaFisicaSuelo\":\"+lecturafisicasuelo.getValorLecturaFisicaSuelo()+\",
-	    \"Metricassuelo_idmetricasSuelo\":\"+lecturafisicasuelo.getMetricassuelo().getIdmetricasSuelo()+\"
-             },";
+            
+//             rta+="{
+//         	    \"idlecturaFisicaSuelo\":\"+lecturafisicasuelo.getIdlecturaFisicaSuelo()+\",
+//	    \"fechaLecturaFisicaSuelo\":\"+lecturafisicasuelo.getFechaLecturaFisicaSuelo()+\",
+//	    \"valorLecturaFisicaSuelo\":\"+lecturafisicasuelo.getValorLecturaFisicaSuelo()+\",
+//	    \"Metricassuelo_idmetricasSuelo\":\"+lecturafisicasuelo.getMetricassuelo().getIdmetricasSuelo()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

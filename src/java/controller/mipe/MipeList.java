@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    ¡Santos frameworks Batman!  \\
-package back.controller.mipe;
+package controller.mipe;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,12 +28,13 @@ public class MipeList extends HttpServlet {
                 
          String rta="";
          for (Mipe mipe: MipeFacade.listAll()) {
-             rta+="{
-         	    \"idmipe\":\"+mipe.getIdmipe()+\",
-	    \"decripcionMipe\":\"+mipe.getDecripcionMipe()+\",
-	    \"fechaMipe\":\"+mipe.getFechaMipe()+\",
-	    \"Lote_idlote\":\"+mipe.getLote().getIdlote()+\"
-             },";
+             rta="";
+//             rta+="{
+//         	    \"idmipe\":\"+mipe.getIdmipe()+\",
+//	    \"decripcionMipe\":\"+mipe.getDecripcionMipe()+\",
+//	    \"fechaMipe\":\"+mipe.getFechaMipe()+\",
+//	    \"Lote_idlote\":\"+mipe.getLote().getIdlote()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Nuestra empresa cuenta con una división sólo para las frases. Disfrútalas  \\
-package back.controller.proyeccion;
+package controller.proyeccion;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,12 +28,12 @@ public class ProyeccionList extends HttpServlet {
                 
          String rta="";
          for (Proyeccion proyeccion: ProyeccionFacade.listAll()) {
-             rta+="{
-         	    \"idproyeccion\":\"+proyeccion.getIdproyeccion()+\",
-	    \"descripcionProyeccion\":\"+proyeccion.getDescripcionProyeccion()+\",
-	    \"fechaProyeccion\":\"+proyeccion.getFechaProyeccion()+\",
-	    \"Lote_idlote\":\"+proyeccion.getLote().getIdlote()+\"
-             },";
+//             rta+="{
+//         	    \"idproyeccion\":\"+proyeccion.getIdproyeccion()+\",
+//	    \"descripcionProyeccion\":\"+proyeccion.getDescripcionProyeccion()+\",
+//	    \"fechaProyeccion\":\"+proyeccion.getFechaProyeccion()+\",
+//	    \"Lote_idlote\":\"+proyeccion.getLote().getIdlote()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

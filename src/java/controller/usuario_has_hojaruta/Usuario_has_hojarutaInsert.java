@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    ¡Oh! (°o° ) ¡es Fredy Arciniegas, el intelectualoide millonario!  \\
-package back.controller.usuario_has_hojaruta;
+package controller.usuario_has_hojaruta;
 
 import java.io.IOException;
 import java.io.PrintWriter;

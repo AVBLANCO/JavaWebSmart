@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    El código es tuyo, modifícalo como quieras  \\
-package back.controller.metricaevotranspiracion;
+package controller.metricaevotranspiracion;
 
 import java.io.IOException;
 import java.io.PrintWriter;

@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Lo sé porque lo sabe Fredy  \\
-package back.controller.quimicasuelo;
+package controller.quimicasuelo;
 
 import java.io.IOException;
 import java.io.PrintWriter;

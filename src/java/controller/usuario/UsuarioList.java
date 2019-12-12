@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Tu alma nos pertenece... Salve Mr. Arciniegas  \\
-package back.controller.usuario;
+package controller.usuario;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,13 +28,13 @@ public class UsuarioList extends HttpServlet {
                 
          String rta="";
          for (Usuario usuario: UsuarioFacade.listAll()) {
-             rta+="{
-         	    \"idusuario\":\"+usuario.getIdusuario()+\",
-	    \"nombreUsuario\":\"+usuario.getNombreUsuario()+\",
-	    \"passwordUsuario\":\"+usuario.getPasswordUsuario()+\",
-	    \"Persona_idpersona\":\"+usuario.getPersona().getIdpersona()+\",
-	    \"Finca_idfinca\":\"+usuario.getFinca().getIdfinca()+\"
-             },";
+//             rta+="{
+//         	    \"idusuario\":\"+usuario.getIdusuario()+\",
+//	    \"nombreUsuario\":\"+usuario.getNombreUsuario()+\",
+//	    \"passwordUsuario\":\"+usuario.getPasswordUsuario()+\",
+//	    \"Persona_idpersona\":\"+usuario.getPersona().getIdpersona()+\",
+//	    \"Finca_idfinca\":\"+usuario.getFinca().getIdfinca()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

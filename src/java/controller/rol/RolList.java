@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Cuando eres Ingeniero en sistemas, pero tu vocación siempre fueron los memes  \\
-package back.controller.rol;
+package controller.rol;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,11 +28,12 @@ public class RolList extends HttpServlet {
                 
          String rta="";
          for (Rol rol: RolFacade.listAll()) {
-             rta+="{
-         	    \"idrol\":\"+rol.getIdrol()+\",
-	    \"descripcion\":\"+rol.getDescripcion()+\",
-	    \"Usuario_idusuario\":\"+rol.getUsuario().getIdusuario()+\"
-             },";
+             
+//             rta+="{
+//         	    \"idrol\":\"+rol.getIdrol()+\",
+//	    \"descripcion\":\"+rol.getDescripcion()+\",
+//	    \"Usuario_idusuario\":\"+rol.getUsuario().getIdusuario()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

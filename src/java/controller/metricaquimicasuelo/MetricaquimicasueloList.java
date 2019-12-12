@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Bueno ¿y ahora qué?  \\
-package back.controller.metricaquimicasuelo;
+package controller.metricaquimicasuelo;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,11 +28,11 @@ public class MetricaquimicasueloList extends HttpServlet {
                 
          String rta="";
          for (Metricaquimicasuelo metricaquimicasuelo: MetricaquimicasueloFacade.listAll()) {
-             rta+="{
-         	    \"idmetricaQuimicaSuelo\":\"+metricaquimicasuelo.getIdmetricaQuimicaSuelo()+\",
-	    \"descripcionMetricaQuimicaSuelocol\":\"+metricaquimicasuelo.getDescripcionMetricaQuimicaSuelocol()+\",
-	    \"Quimicasuelo_idQuimicaSuelo\":\"+metricaquimicasuelo.getQuimicasuelo().getIdQuimicaSuelo()+\"
-             },";
+//             rta+="{
+//         	    \"idmetricaQuimicaSuelo\":\"+metricaquimicasuelo.getIdmetricaQuimicaSuelo()+\",
+//	    \"descripcionMetricaQuimicaSuelocol\":\"+metricaquimicasuelo.getDescripcionMetricaQuimicaSuelocol()+\",
+//	    \"Quimicasuelo_idQuimicaSuelo\":\"+metricaquimicasuelo.getQuimicasuelo().getIdQuimicaSuelo()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

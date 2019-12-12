@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Lolita, luz de mi vida, fuego de mis entrañas. Pecado mío, alma mía.  \\
-package back.controller.suelo;
+package controller.suelo;
 
 import java.io.IOException;
 import java.io.PrintWriter;

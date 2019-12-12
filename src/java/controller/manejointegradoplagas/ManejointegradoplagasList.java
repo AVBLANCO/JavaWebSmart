@@ -28,11 +28,11 @@ public class ManejointegradoplagasList extends HttpServlet {
                 
          String rta="";
          for (Manejointegradoplagas manejointegradoplagas: ManejointegradoplagasFacade.listAll()) {
-             rta+="{
-         	    \"idmanejoIntegradoPlagas\":\"+manejointegradoplagas.getIdmanejoIntegradoPlagas()+\",
-	    \"descricionManejoIntegradoPlagas\":\"+manejointegradoplagas.getDescricionManejoIntegradoPlagas()+\",
-	    \"Mipe_idmipe\":\"+manejointegradoplagas.getMipe().getIdmipe()+\"
-             },";
+//             rta+="{
+//         	    \"idmanejoIntegradoPlagas\":\"+manejointegradoplagas.getIdmanejoIntegradoPlagas()+\",
+//	    \"descricionManejoIntegradoPlagas\":\"+manejointegradoplagas.getDescricionManejoIntegradoPlagas()+\",
+//	    \"Mipe_idmipe\":\"+manejointegradoplagas.getMipe().getIdmipe()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Ella existió sólo en un sueño. Él es un poema que el poeta nunca escribió.  \\
-package back.controller.rol;
+package controller.rol;
 
 import java.io.IOException;
 import java.io.PrintWriter;

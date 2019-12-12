@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Caminante no hay camino, se hace camino al andar  \\
-package back.controller.meta;
+package controller.meta;
 
 import java.io.IOException;
 import java.io.PrintWriter;

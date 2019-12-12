@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    ¡Muerte a todos los humanos!  \\
-package back.controller.usuario;
+package controller.usuario;
 
 import java.io.IOException;
 import java.io.PrintWriter;

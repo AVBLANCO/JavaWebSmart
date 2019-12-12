@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    ¡Santos frameworks Batman!  \\
-package back.controller.metricaquimicasuelo;
+package controller.metricaquimicasuelo;
 
 import java.io.IOException;
 import java.io.PrintWriter;

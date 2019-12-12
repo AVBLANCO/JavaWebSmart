@@ -1,6 +1,6 @@
-package back.controller.metricassuelo;
+package controller.metricassuelo;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;

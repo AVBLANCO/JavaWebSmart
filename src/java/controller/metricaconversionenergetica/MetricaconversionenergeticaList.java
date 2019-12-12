@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Nada mejor que el código hecho a mano.  \\
-package back.controller.metricaconversionenergetica;
+package controller.metricaconversionenergetica;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,11 +28,11 @@ public class MetricaconversionenergeticaList extends HttpServlet {
                 
          String rta="";
          for (Metricaconversionenergetica metricaconversionenergetica: MetricaconversionenergeticaFacade.listAll()) {
-             rta+="{
-         	    \"idmetricaConversionEnergetica\":\"+metricaconversionenergetica.getIdmetricaConversionEnergetica()+\",
-	    \"desripcionMetricaConversionEnergetica\":\"+metricaconversionenergetica.getDesripcionMetricaConversionEnergetica()+\",
-	    \"Conversionenergetica_idconversionEnergetica\":\"+metricaconversionenergetica.getConversionenergetica().getIdconversionEnergetica()+\"
-             },";
+//             rta+="{
+//         	    \"idmetricaConversionEnergetica\":\"+metricaconversionenergetica.getIdmetricaConversionEnergetica()+\",
+//	    \"desripcionMetricaConversionEnergetica\":\"+metricaconversionenergetica.getDesripcionMetricaConversionEnergetica()+\",
+//	    \"Conversionenergetica_idconversionEnergetica\":\"+metricaconversionenergetica.getConversionenergetica().getIdconversionEnergetica()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    ¿Documentaqué?  \\
-package back.controller.persona;
+package controller.persona;
 
 import java.io.IOException;
 import java.io.PrintWriter;

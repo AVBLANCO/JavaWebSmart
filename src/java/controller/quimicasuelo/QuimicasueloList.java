@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    La noche está estrellada, y tiritan, azules, los astros, a lo lejos  \\
-package back.controller.quimicasuelo;
+package controller.quimicasuelo;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,11 +28,11 @@ public class QuimicasueloList extends HttpServlet {
                 
          String rta="";
          for (Quimicasuelo quimicasuelo: QuimicasueloFacade.listAll()) {
-             rta+="{
-         	    \"idQuimicaSuelo\":\"+quimicasuelo.getIdQuimicaSuelo()+\",
-	    \"descripcionQuimica\":\"+quimicasuelo.getDescripcionQuimica()+\",
-	    \"Suelo_idsuelo\":\"+quimicasuelo.getSuelo().getIdsuelo()+\"
-             },";
+//             rta+="{
+//         	    \"idQuimicaSuelo\":\"+quimicasuelo.getIdQuimicaSuelo()+\",
+//	    \"descripcionQuimica\":\"+quimicasuelo.getDescripcionQuimica()+\",
+//	    \"Suelo_idsuelo\":\"+quimicasuelo.getSuelo().getIdsuelo()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

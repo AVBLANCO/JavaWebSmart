@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Ahora con 25% menos groserías  \\
-package back.controller.miagroempresa;
+package controller.miagroempresa;
 
 import java.io.IOException;
 import java.io.PrintWriter;

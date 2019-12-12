@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Te veeeeeooooo  \\
-package back.controller.metricamanejointegradoenfermedades;
+package controller.metricamanejointegradoenfermedades;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,11 +28,11 @@ public class MetricamanejointegradoenfermedadesList extends HttpServlet {
                 
          String rta="";
          for (Metricamanejointegradoenfermedades metricamanejointegradoenfermedades: MetricamanejointegradoenfermedadesFacade.listAll()) {
-             rta+="{
-         	    \"idmetricaManejoIntegradoEnfermedades\":\"+metricamanejointegradoenfermedades.getIdmetricaManejoIntegradoEnfermedades()+\",
-	    \"descricionMetricaManejoIntegradoEnfermedades\":\"+metricamanejointegradoenfermedades.getDescricionMetricaManejoIntegradoEnfermedades()+\",
-	    \"Manejointegradoenfermedades_idmanejoIntegradoEnfermedades\":\"+metricamanejointegradoenfermedades.getManejointegradoenfermedades().getIdmanejoIntegradoEnfermedades()+\"
-             },";
+//             rta+="{
+//         	    \"idmetricaManejoIntegradoEnfermedades\":\"+metricamanejointegradoenfermedades.getIdmetricaManejoIntegradoEnfermedades()+\",
+//	    \"descricionMetricaManejoIntegradoEnfermedades\":\"+metricamanejointegradoenfermedades.getDescricionMetricaManejoIntegradoEnfermedades()+\",
+//	    \"Manejointegradoenfermedades_idmanejoIntegradoEnfermedades\":\"+metricamanejointegradoenfermedades.getManejointegradoenfermedades().getIdmanejoIntegradoEnfermedades()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

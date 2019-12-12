@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    ...y esta no es la única frase que encontrarás...  \\
-package back.controller.meta;
+package controller.meta;
 
 import back.dto.*;
 import java.io.IOException;
@@ -34,12 +28,13 @@ public class MetaList extends HttpServlet {
                 
          String rta="";
          for (Meta meta: MetaFacade.listAll()) {
-             rta+="{
-         	    \"idmeta\":\"+meta.getIdmeta()+\",
-	    \"descripcionMeta\":\"+meta.getDescripcionMeta()+\",
-	    \"valorMeta\":\"+meta.getValorMeta()+\",
-	    \"Proyeccion_idproyeccion\":\"+meta.getProyeccion().getIdproyeccion()+\"
-             },";
+             rta="";
+//             rta+="{
+//         	    \"idmeta\":\"+meta.getIdmeta()+\",
+//	    \"descripcionMeta\":\"+meta.getDescripcionMeta()+\",
+//	    \"valorMeta\":\"+meta.getValorMeta()+\",
+//	    \"Proyeccion_idproyeccion\":\"+meta.getProyeccion().getIdproyeccion()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

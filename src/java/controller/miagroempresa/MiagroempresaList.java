@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    ¿Sabías que Anarchy se generó a sí mismo?  \\
-package back.controller.miagroempresa;
+package controller.miagroempresa;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,11 +28,11 @@ public class MiagroempresaList extends HttpServlet {
                 
          String rta="";
          for (Miagroempresa miagroempresa: MiagroempresaFacade.listAll()) {
-             rta+="{
-         	    \"idmiAgroempresa\":\"+miagroempresa.getIdmiAgroempresa()+\",
-	    \"descipcionMiAgroempresa\":\"+miagroempresa.getDescipcionMiAgroempresa()+\",
-	    \"Lote_idlote\":\"+miagroempresa.getLote().getIdlote()+\"
-             },";
+//             rta+="{
+//         	    \"idmiAgroempresa\":\"+miagroempresa.getIdmiAgroempresa()+\",
+//	    \"descipcionMiAgroempresa\":\"+miagroempresa.getDescipcionMiAgroempresa()+\",
+//	    \"Lote_idlote\":\"+miagroempresa.getLote().getIdlote()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Te veeeeeooooo  \\
-package back.controller.usuario_has_hojaruta;
+package controller.usuario_has_hojaruta;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,10 +28,11 @@ public class Usuario_has_hojarutaList extends HttpServlet {
                 
          String rta="";
          for (Usuario_has_hojaruta usuario_has_hojaruta: Usuario_has_hojarutaFacade.listAll()) {
-             rta+="{
-         	    \"Usuario_idusuario\":\"+usuario_has_hojaruta.getUsuario().getIdusuario()+\",
-	    \"Hojaruta_idhojaRuta\":\"+usuario_has_hojaruta.getHojaruta().getIdhojaRuta()+\"
-             },";
+             rta="";
+//             rta+="{
+//         	    \"Usuario_idusuario\":\"+usuario_has_hojaruta.getUsuario().getIdusuario()+\",
+//	    \"Hojaruta_idhojaRuta\":\"+usuario_has_hojaruta.getHojaruta().getIdhojaRuta()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

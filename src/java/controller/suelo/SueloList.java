@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Tu alma nos pertenece... Salve Mr. Arciniegas  \\
-package back.controller.suelo;
+package controller.suelo;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,12 +28,13 @@ public class SueloList extends HttpServlet {
                 
          String rta="";
          for (Suelo suelo: SueloFacade.listAll()) {
-             rta+="{
-         	    \"idsuelo\":\"+suelo.getIdsuelo()+\",
-	    \"decripcionSuelo\":\"+suelo.getDecripcionSuelo()+\",
-	    \"fechaSuelo\":\"+suelo.getFechaSuelo()+\",
-	    \"Lote_idlote\":\"+suelo.getLote().getIdlote()+\"
-             },";
+             rta="";
+//             rta+="{
+//         	    \"idsuelo\":\"+suelo.getIdsuelo()+\",
+//	    \"decripcionSuelo\":\"+suelo.getDecripcionSuelo()+\",
+//	    \"fechaSuelo\":\"+suelo.getFechaSuelo()+\",
+//	    \"Lote_idlote\":\"+suelo.getLote().getIdlote()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

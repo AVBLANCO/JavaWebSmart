@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Si he visto más lejos es porque estoy sentado sobre los hombros de gigantes.  \\
-package back.controller.metricamanejoplagas;
+package controller.metricamanejoplagas;
 
 import java.io.IOException;
 import java.io.PrintWriter;

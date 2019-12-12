@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Recuerda, cuando enciendas la molotov, debes arrojarla  \\
-package back.controller.metricabalancehidrico;
+package controller.metricabalancehidrico;
 
 import java.io.IOException;
 import java.io.PrintWriter;

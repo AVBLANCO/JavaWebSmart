@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    En esto paso mis sábados en la noche ( ¬.¬)  \\
-package back.controller.persona;
+package controller.persona;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,14 +28,14 @@ public class PersonaList extends HttpServlet {
                 
          String rta="";
          for (Persona persona: PersonaFacade.listAll()) {
-             rta+="{
-         	    \"idpersona\":\"+persona.getIdpersona()+\",
-	    \"nombrePersona\":\"+persona.getNombrePersona()+\",
-	    \"cedulaPersona\":\"+persona.getCedulaPersona()+\",
-	    \"correoPersona\":\"+persona.getCorreoPersona()+\",
-	    \"fechaNacimientoPersona\":\"+persona.getFechaNacimientoPersona()+\",
-	    \"genero\":\"+persona.getGenero()+\"
-             },";
+//             rta+="{
+//         	    \"idpersona\":\"+persona.getIdpersona()+\",
+//	    \"nombrePersona\":\"+persona.getNombrePersona()+\",
+//	    \"cedulaPersona\":\"+persona.getCedulaPersona()+\",
+//	    \"correoPersona\":\"+persona.getCorreoPersona()+\",
+//	    \"fechaNacimientoPersona\":\"+persona.getFechaNacimientoPersona()+\",
+//	    \"genero\":\"+persona.getGenero()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

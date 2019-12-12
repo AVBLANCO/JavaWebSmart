@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Podrías agradecernos con unos cuantos billetes _/(n.n)\_  \\
-package back.controller.metricabiologiasuelo;
+package controller.metricabiologiasuelo;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,11 +28,11 @@ public class MetricabiologiasueloList extends HttpServlet {
                 
          String rta="";
          for (Metricabiologiasuelo metricabiologiasuelo: MetricabiologiasueloFacade.listAll()) {
-             rta+="{
-         	    \"idmetricaBiologiaSuelo\":\"+metricabiologiasuelo.getIdmetricaBiologiaSuelo()+\",
-	    \"descripcionMetricaBiologiaSuelo\":\"+metricabiologiasuelo.getDescripcionMetricaBiologiaSuelo()+\",
-	    \"Biologiasuelo_idbiologiaSuelo\":\"+metricabiologiasuelo.getBiologiasuelo().getIdbiologiaSuelo()+\"
-             },";
+//             rta+="{
+//         	    \"idmetricaBiologiaSuelo\":\"+metricabiologiasuelo.getIdmetricaBiologiaSuelo()+\",
+//	    \"descripcionMetricaBiologiaSuelo\":\"+metricabiologiasuelo.getDescripcionMetricaBiologiaSuelo()+\",
+//	    \"Biologiasuelo_idbiologiaSuelo\":\"+metricabiologiasuelo.getBiologiasuelo().getIdbiologiaSuelo()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

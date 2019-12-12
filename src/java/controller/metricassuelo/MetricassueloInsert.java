@@ -1,4 +1,4 @@
-package back.controller.metricassuelo;
+package controller.metricassuelo;
 
 import java.io.IOException;
 import java.io.PrintWriter;

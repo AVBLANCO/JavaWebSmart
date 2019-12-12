@@ -1,11 +1,4 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
-
-//    Los animales, asombrados, pasaron su mirada del cerdo al hombre, y del hombre al cerdo; y, nuevamente, del cerdo al hombre; pero ya era imposible distinguir quién era uno y quién era otro.  \\
-package back.controller.metricamanejointegradoenfermedades;
+package controller.metricamanejointegradoenfermedades;
 
 import java.io.IOException;
 import java.io.PrintWriter;

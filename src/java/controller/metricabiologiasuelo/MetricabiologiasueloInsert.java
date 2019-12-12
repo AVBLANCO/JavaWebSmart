@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Más delgado  \\
-package back.controller.metricabiologiasuelo;
+package controller.metricabiologiasuelo;
 
 import java.io.IOException;
 import java.io.PrintWriter;

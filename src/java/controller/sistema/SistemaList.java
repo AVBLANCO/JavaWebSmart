@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    La segunda regla de Anarchy es no hablar de Anarchy  \\
-package back.controller.sistema;
+package controller.sistema;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,10 +28,10 @@ public class SistemaList extends HttpServlet {
                 
          String rta="";
          for (Sistema sistema: SistemaFacade.listAll()) {
-             rta+="{
-         	    \"idsistema\":\"+sistema.getIdsistema()+\",
-	    \"descripcion\":\"+sistema.getDescripcion()+\"
-             },";
+//             rta+="{
+//         	    \"idsistema\":\"+sistema.getIdsistema()+\",
+//	    \"descripcion\":\"+sistema.getDescripcion()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

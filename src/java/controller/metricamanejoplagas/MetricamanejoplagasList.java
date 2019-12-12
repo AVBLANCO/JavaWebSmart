@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Dispongo de doce horas de adelanto, puedo de decárselas a ella  \\
-package back.controller.metricamanejoplagas;
+package controller.metricamanejoplagas;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,11 +28,11 @@ public class MetricamanejoplagasList extends HttpServlet {
                 
          String rta="";
          for (Metricamanejoplagas metricamanejoplagas: MetricamanejoplagasFacade.listAll()) {
-             rta+="{
-         	    \"idmetricaManejoPlagas\":\"+metricamanejoplagas.getIdmetricaManejoPlagas()+\",
-	    \"descripcionMetricaManejoPlagas\":\"+metricamanejoplagas.getDescripcionMetricaManejoPlagas()+\",
-	    \"Manejointegradoplagas_idmanejoIntegradoPlagas\":\"+metricamanejoplagas.getManejointegradoplagas().getIdmanejoIntegradoPlagas()+\"
-             },";
+//             rta+="{
+//         	    \"idmetricaManejoPlagas\":\"+metricamanejoplagas.getIdmetricaManejoPlagas()+\",
+//	    \"descripcionMetricaManejoPlagas\":\"+metricamanejoplagas.getDescripcionMetricaManejoPlagas()+\",
+//	    \"Manejointegradoplagas_idmanejoIntegradoPlagas\":\"+metricamanejoplagas.getManejointegradoplagas().getIdmanejoIntegradoPlagas()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

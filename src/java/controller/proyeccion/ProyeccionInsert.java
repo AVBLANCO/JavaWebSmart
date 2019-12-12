@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    NEVERMORE  \\
-package back.controller.proyeccion;
+package controller.proyeccion;
 
 import java.io.IOException;
 import java.io.PrintWriter;

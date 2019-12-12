@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Trabajo individual singifica ganancia individual  \\
-package back.controller.sistema;
+package controller.sistema;
 
 import java.io.IOException;
 import java.io.PrintWriter;

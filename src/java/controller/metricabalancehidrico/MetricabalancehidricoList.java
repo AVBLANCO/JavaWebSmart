@@ -1,11 +1,5 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Yo tengo un sueño. El sueño de que mis hijos vivan en un mundo con un único lenguaje de programación.  \\
-package back.controller.metricabalancehidrico;
+package controller.metricabalancehidrico;
 
 import back.dto.*;
 import java.io.IOException;
@@ -34,11 +28,12 @@ public class MetricabalancehidricoList extends HttpServlet {
                 
          String rta="";
          for (Metricabalancehidrico metricabalancehidrico: MetricabalancehidricoFacade.listAll()) {
-             rta+="{
-         	    \"idmetricaBalanceHidrico\":\"+metricabalancehidrico.getIdmetricaBalanceHidrico()+\",
-	    \"descripcionMetricaBalanceHidrico\":\"+metricabalancehidrico.getDescripcionMetricaBalanceHidrico()+\",
-	    \"Balancehidrico_idbalanceHidrico\":\"+metricabalancehidrico.getBalancehidrico().getIdbalanceHidrico()+\"
-             },";
+             
+//             rta+="{
+//         	    \"idmetricaBalanceHidrico\":\"+metricabalancehidrico.getIdmetricaBalanceHidrico()+\",
+//	    \"descripcionMetricaBalanceHidrico\":\"+metricabalancehidrico.getDescripcionMetricaBalanceHidrico()+\",
+//	    \"Balancehidrico_idbalanceHidrico\":\"+metricabalancehidrico.getBalancehidrico().getIdbalanceHidrico()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){

@@ -1,13 +1,7 @@
-/*
-              -------Creado por-------
-             \(x.x )/ Anarchy \( x.x)/
-              ------------------------
- */
 
-//    Bueno ¿y ahora qué?  \\
-package back.controller.metricaevotranspiracion;
+package controller.metricaevotranspiracion;
 
-import back.dto.*;
+import dto.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,11 +28,11 @@ public class MetricaevotranspiracionList extends HttpServlet {
                 
          String rta="";
          for (Metricaevotranspiracion metricaevotranspiracion: MetricaevotranspiracionFacade.listAll()) {
-             rta+="{
-         	    \"idmetricaEvotranspiracion\":\"+metricaevotranspiracion.getIdmetricaEvotranspiracion()+\",
-	    \"descripcionMetricaEvotranspiracion\":\"+metricaevotranspiracion.getDescripcionMetricaEvotranspiracion()+\",
-	    \"Evotranspiracion_idevotranspiracion\":\"+metricaevotranspiracion.getEvotranspiracion().getIdevotranspiracion()+\"
-             },";
+//             rta+="{
+//         	    \"idmetricaEvotranspiracion\":\"+metricaevotranspiracion.getIdmetricaEvotranspiracion()+\",
+//	    \"descripcionMetricaEvotranspiracion\":\"+metricaevotranspiracion.getDescripcionMetricaEvotranspiracion()+\",
+//	    \"Evotranspiracion_idevotranspiracion\":\"+metricaevotranspiracion.getEvotranspiracion().getIdevotranspiracion()+\"
+//             },";
          }
          String msg="{\"msg\":\"exito\"}";
          if(rta!=""){
